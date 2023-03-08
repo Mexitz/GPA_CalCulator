@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>حاسبة المعدل الفصلي</title>
+
+    
+</head>
+<body class = "Body1">
+    <div class="message">الصفحة الأن مصممة للأجهزة المحمولة فقط</div>
+<div class="content">
+    <div id = "Calculations">
+        <button id ="Calculate" class="transition-button">أحسب</button>
+    </div>
+
+    <div id = "MainD">
+        
+        <!--           TitleBar            -->
+
+        <div id = "DivTitle">
+
+            <div id = "MainT">
+                <h1 id = "Title">المعدل الفصلي :</h1>
+            </div>
+
+            <div id = "AddBA">
+
+                <button id ="AddHolder">
+                    <img src="Add.png" id ="AddB">
+                </button>
+
+            </div>
+
+        </div>
+
+        <!--           Subject 1            -->
+
+        <div id = "Sub1" class="drop-from-top">
+
+            <div id ="Sub1G">
+
+                <select id="Grade" name="Grade">
+                    <option value="5.00" placeholder="A+">A+</option>
+                    <option value="4.75" placeholder="A">A</option>
+                    <option value="4.50" placeholder="B+">B+</option>
+                    <option value="4.00" placeholder="B">B</option>
+                    <option value="3.50" placeholder="C+">C+</option>
+                    <option value="3.00" placeholder="C">C</option>
+                    <option value="2.50" placeholder="D+">D+</option>
+                    <option value="2.00" placeholder="D">D</option>
+                    <option value="1.00" placeholder="F">F</option>
+                  </select>
+
+            </div>
+
+            <div id ="Sub1H">
+                <input type="number" id ="Hours" placeholder="الساعات">
+
+            </div>
+
+            <div id ="Sub1N">
+                <input type="text" id ="Name" placeholder="أسم المقرر">
+
+            </div>
+        </div>
+        <!--           Subject 2            -->
+        <div id = "Sub2" class="drop-from-top">
+
+            <div id ="Sub2G">
+
+                <select id="Grade2" name="Grade">
+                    <option value="5.00" placeholder="A+">A+</option>
+                    <option value="4.75" placeholder="A">A</option>
+                    <option value="4.50" placeholder="B+">B+</option>
+                    <option value="4.00" placeholder="B">B</option>
+                    <option value="3.50" placeholder="C+">C+</option>
+                    <option value="3.00" placeholder="C">C</option>
+                    <option value="2.50" placeholder="D+">D+</option>
+                    <option value="2.00" placeholder="D">D</option>
+                    <option value="1.00" placeholder="F">F</option>
+                  </select>
+
+            </div>
+
+            <div id ="Sub2H">
+                <input type="number" id ="Hours2" placeholder="الساعات">
+
+            </div>
+
+            <div id ="Sub2N">
+                <input type="text" id ="Name2" placeholder="أسم المقرر">
+
+            </div>
+
+
+        </div>
+            <!--           Subject 3            -->
+
+            <div id ="Sub3" class="drop-from-top">
+                
+            <div id ="Sub3G">
+
+                <select id="Grade3" name="Grade">
+                    <option value="5.00" placeholder="A+">A+</option>
+                    <option value="4.75" placeholder="A">A</option>
+                    <option value="4.50" placeholder="B+">B+</option>
+                    <option value="4.00" placeholder="B">B</option>
+                    <option value="3.50" placeholder="C+">C+</option>
+                    <option value="3.00" placeholder="C">C</option>
+                    <option value="2.50" placeholder="D+">D+</option>
+                    <option value="2.00" placeholder="D">D</option>
+                    <option value="1.00" placeholder="F">F</option>
+                  </select>
+
+            </div>
+
+            <div id ="Sub3H">
+                <input type="number" id ="Hours3" placeholder="الساعات">
+
+            </div>
+
+            <div id ="Sub3N">
+                <input type="text" id ="Name3" placeholder="أسم المقرر">
+
+            </div>
+
+
+            </div>
+            <!--           Subject 4            -->
+
+            <div id = "Sub4" class="drop-from-top">
+                
+            <div id ="Sub4G">
+
+                <select id="Grade4" name="Grade">
+                    <option value="5.00" placeholder="A+">A+</option>
+                    <option value="4.75" placeholder="A">A</option>
+                    <option value="4.50" placeholder="B+">B+</option>
+                    <option value="4.00" placeholder="B">B</option>
+                    <option value="3.50" placeholder="C+">C+</option>
+                    <option value="3.00" placeholder="C">C</option>
+                    <option value="2.50" placeholder="D+">D+</option>
+                    <option value="2.00" placeholder="D">D</option>
+                    <option value="1.00" placeholder="F">F</option>
+                  </select>
+
+            </div>
+
+            <div id ="Sub4H">
+                <input type="number" id ="Hours4" placeholder="الساعات">
+
+            </div>
+
+            <div id ="Sub4N">
+                <input type="text" id ="Name4" placeholder="أسم المقرر">
+
+            </div>                
+
+            </div>
+            <!--           Subject 5            -->
+
+            <div id = "Sub5" class="drop-from-top">
+                
+            <div id ="Sub5G">
+
+                <select id="Grade5" name="Grade">
+                    <option value="5.00" placeholder="A+">A+</option>
+                    <option value="4.75" placeholder="A">A</option>
+                    <option value="4.50" placeholder="B+">B+</option>
+                    <option value="4.00" placeholder="B">B</option>
+                    <option value="3.50" placeholder="C+">C+</option>
+                    <option value="3.00" placeholder="C">C</option>
+                    <option value="2.50" placeholder="D+">D+</option>
+                    <option value="2.00" placeholder="D">D</option>
+                    <option value="1.00" placeholder="F">F</option>
+                  </select>
+
+            </div>
+
+            <div id ="Sub5H">
+                <input type="number" id ="Hours5" placeholder="الساعات">
+
+            </div>
+
+            <div id ="Sub5N">
+                <input type="text" id ="Name5" placeholder="أسم المقرر">
+
+            </div>
+                
+            </div>
+
+            <!--           Subject 6            -->
+
+            <div id = "Sub6" class="drop-from-top">
+
+                <div id ="Sub6G">
+
+                    <select id="Grade6" name="Grade">
+                        <option value="5.00" placeholder="A+">A+</option>
+                        <option value="4.75" placeholder="A">A</option>
+                        <option value="4.50" placeholder="B+">B+</option>
+                        <option value="4.00" placeholder="B">B</option>
+                        <option value="3.50" placeholder="C+">C+</option>
+                        <option value="3.00" placeholder="C">C</option>
+                        <option value="2.50" placeholder="D+">D+</option>
+                        <option value="2.00" placeholder="D">D</option>
+                        <option value="1.00" placeholder="F">F</option>
+                      </select>
+    
+                </div>
+    
+                <div id ="Sub6H" class="drop-from-top">
+                    <input type="number" id ="Hours6" placeholder="الساعات">
+    
+                </div>
+    
+                <div id ="Sub6N">
+                    <input type="text" id ="Name6" placeholder="أسم المقرر">
+    
+                </div>
+    
+    
+                
+            </div>
+
+            <!--           Subject 7            -->
+
+            <div id = "Sub7" class="drop-from-top">
+
+                
+            <div id ="Sub7G">
+
+                <select id="Grade7" name="Grade">
+                    <option value="5.00" placeholder="A+">A+</option>
+                    <option value="4.75" placeholder="A">A</option>
+                    <option value="4.50" placeholder="B+">B+</option>
+                    <option value="4.00" placeholder="B">B</option>
+                    <option value="3.50" placeholder="C+">C+</option>
+                    <option value="3.00" placeholder="C">C</option>
+                    <option value="2.50" placeholder="D+">D+</option>
+                    <option value="2.00" placeholder="D">D</option>
+                    <option value="1.00" placeholder="F">F</option>
+                  </select>
+
+            </div>
+
+            <div id ="Sub7H">
+                <input type="number" id ="Hours7" placeholder="الساعات">
+
+            </div>
+
+            <div id ="Sub7N">
+                <input type="text" id ="Name7" placeholder="أسم المقرر">
+
+            </div>
+
+
+                
+            </div>
+
+            <!--           Subject 8            -->
+
+            <div id = "Sub8" class="drop-from-top">
+            
+                <div id ="Sub8G">
+
+                    <select id="Grade8" name="Grade">
+                        <option value="5.00" placeholder="A+">A+</option>
+                        <option value="4.75" placeholder="A">A</option>
+                        <option value="4.50" placeholder="B+">B+</option>
+                        <option value="4.00" placeholder="B">B</option>
+                        <option value="3.50" placeholder="C+">C+</option>
+                        <option value="3.00" placeholder="C">C</option>
+                        <option value="2.50" placeholder="D+">D+</option>
+                        <option value="2.00" placeholder="D">D</option>
+                        <option value="1.00" placeholder="F">F</option>
+                      </select>
+    
+                </div>
+    
+                <div id ="Sub8H">
+                    <input type="number" id ="Hours8" placeholder="الساعات">
+    
+                </div>
+    
+                <div id ="Sub8N">
+                    <input type="text" id ="Name8" placeholder="أسم المقرر">
+    
+                </div>
+    
+    
+            </div>
+
+            <!--           Subject 9            -->
+
+            <div id = "Sub9" class="drop-from-top">
+
+                <div id ="Sub9G">
+
+                    <select id="Grade9" name="Grade">
+                        <option value="5.00" placeholder="A+">A+</option>
+                        <option value="4.75" placeholder="A">A</option>
+                        <option value="4.50" placeholder="B+">B+</option>
+                        <option value="4.00" placeholder="B">B</option>
+                        <option value="3.50" placeholder="C+">C+</option>
+                        <option value="3.00" placeholder="C">C</option>
+                        <option value="2.50" placeholder="D+">D+</option>
+                        <option value="2.00" placeholder="D">D</option>
+                        <option value="1.00" placeholder="F">F</option>
+                      </select>
+    
+                </div>
+    
+                <div id ="Sub9H">
+                    <input type="number" id ="Hours9" placeholder="الساعات">
+    
+                </div>
+    
+                <div id ="Sub9N">
+                    <input type="text" id ="Name9" placeholder="أسم المقرر">
+    
+                </div>
+    
+    
+            </div>        
+        
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
